@@ -1,13 +1,12 @@
 <template>
- <Cabecera />
+   <div>
+      <MiContenedor />
+   </div>
 </template>
 
 <script setup>
-
-import Cabecera from './components/Cabecera.vue';
-
+    import MiContenedor from './components/MiContenedor.vue';
 </script>
 
-<style>
-
+<style lang="css" scoped>
 </style>
