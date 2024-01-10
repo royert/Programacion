@@ -1,17 +1,17 @@
 <template>
-   <div class="container-flex">
-      <TarjetaSimple />
-      <TarjetaDosVue />
+   <div class="">
+      <QuienSomos />
+      <MiHistoria />
+      <UltimosLogros />
    </div>
 </template>
 
 <script setup>
-import TarjetaSimple from "./TarjetaSimple.vue";
-import TarjetaDosVue from "./TarjetaDos.vue";
+import QuienSomos from "./Home/QuienSomos.vue";
+import MiHistoria from "./Home/MiHistoria.vue";
+import UltimosLogros from "./Home/UltimosLogros.vue";
 </script>
 
 <style lang="css" scoped>
-.container-flex{
-    display: flex;
-}
+
 </style>
