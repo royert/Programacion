@@ -17,7 +17,7 @@
 				 
 				<form  method="POST" action="../view/customers/obtener.php?codpaci=<?php echo $row['codpaci']; ?>">
 							
-				<input class="form-control" name="codpaci" type="hidden" value="<?php echo $row->codpaci; ?>">
+				<input class="form-control" name="codpaci" type="hidden" value="<?php echo $row['codpaci']; ?>">
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="form-group form-group-default">
@@ -52,6 +52,31 @@
 						<option value="Si">Si</option>
 						<option value="No">No</option>
 						</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group form-group-default">
+								<label>Funcionario</label>
+						
+						
+						<select class="form-control" name="funcionario" value="<?php echo $row['funcionario'];?>" >
+						<option value="Si">Si</option>
+						<option value="No">No</option>
+						</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group form-group-default">
+								<label>Carnet</label>
+						
+						<input type="text" class="form-control" name="carnet" value="<?php echo $row['serial']; ?>">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group form-group-default">
+								<label>Cargo</label>
+						
+						<input type="text" class="form-control" name="carnet" value="<?php echo $row['cargos']; ?>">
 							</div>
 						</div>
 						
@@ -141,7 +166,7 @@
 				 
 				<form  method="POST" action="../view/customers/password.php?codpaci=<?php echo $row['codpaci']; ?>">
 							
-				<input class="form-control" name="codpaci" type="hidden" value="<?php echo $row->codpaci; ?>">
+				<input class="form-control" name="codpaci" type="hidden" value="<?php echo $row['codpaci']; ?>">
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="form-group form-group-default">

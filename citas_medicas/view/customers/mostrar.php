@@ -431,6 +431,9 @@
 													<th>Seguro</th>
 													<th>Teléfono</th>
 													<th>Funcionario</th>
+													<th>Carnet</th>
+													<th>Cargo</th>
+													
 													<th>Estado</th>
 													<th>Fecha</th>
 													<th style="width: 10%">Action</th>
@@ -444,6 +447,9 @@
 													<th>Seguro</th>
 													<th>Teléfono</th>
 													<th>Funcionario</th>
+													<th>Carnet</th>
+													<th>Cargo</th>
+													
 													<th>Estado</th>
 													<th>Fecha</th>
 													<th>Action</th>
@@ -459,7 +465,7 @@
 						$database = new Connection();
 						$db = $database->open();
 						try{	
-							$sql = 'SELECT customers.codpaci, customers.dnipa,customers.nombrep,customers.apellidop ,customers.seguro,customers.tele,customers.sexo,customers.funcionario,customers.usuario,customers.clave,customers.cargo,customers.estado, customers.fecha_create  FROM customers';
+							$sql = 'SELECT customers.codpaci, customers.dnipa,customers.nombrep,customers.apellidop ,customers.seguro,customers.tele,customers.sexo,customers.funcionario,customers.serial,customers.cargos,customers.usuario,customers.clave,customers.cargo,customers.estado, customers.fecha_create  FROM customers';
 							foreach ($db->query($sql) as $row) {
 								?>
 								<tr>
@@ -469,6 +475,8 @@
 									<td><?php echo $row['seguro']; ?></td>
 									<td><?php echo $row['tele']; ?></td>
 									<td><?php echo $row['funcionario']; ?></td>
+									<td><?php echo $row['serial']; ?></td>
+									<td><?php echo $row['cargos']; ?></td>
 															
 							   <td>
 						 <?php    if($row['estado']==1)  { ?> 
@@ -661,6 +669,8 @@ $seguro=$_POST['seguro'];
 $tele=$_POST['tele'];
 $sexo=$_POST['sexo'];
 $funcionario=$_POST['funcionario'];
+$carnet=$_POST['carnet'];
+$cargo=$_POST['cargos'];
 $usuario=$_POST['usuario'];
 
 $clave=MD5($_POST['clave']);
@@ -700,7 +710,7 @@ Swal.fire({
  else
  {
 // Si no hay resultados, ingresamos el registro a la base de datos
-$sql2 = "INSERT INTO customers(dnipa,nombrep,apellidop,seguro,tele,sexo,funcionario,usuario,clave,cargo,estado)VALUES ('$dnipa','$nombrep','$apellidop','$seguro','$tele','$sexo','$funcionario','$usuario','$clave','2','1')";
+$sql2 = "INSERT INTO customers(dnipa,nombrep,apellidop,seguro,tele,sexo,funcionario,serial,cargos,usuario,clave,cargo,estado)VALUES ('$dnipa','$nombrep','$apellidop','$seguro','$tele','$sexo','$funcionario','$carnet','$cargo','$usuario','$clave','2','1')";
 
 
 if (mysqli_query($conn, $sql2)) {

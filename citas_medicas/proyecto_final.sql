@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-01-2024 a las 13:19:19
+-- Tiempo de generación: 11-01-2024 a las 04:48:42
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -43,7 +43,8 @@ CREATE TABLE `appointment` (
 --
 
 INSERT INTO `appointment` (`codcit`, `dates`, `hour`, `codpaci`, `coddoc`, `codespe`, `estado`, `fecha_create`) VALUES
-(2, '2022-03-31', '09:00:00', 1, 2, 4, '1', '2022-03-31 05:57:09');
+(2, '2022-03-31', '09:00:00', 1, 2, 4, '1', '2022-03-31 05:57:09'),
+(5, '2024-01-11', '14:46:00', 6, 4, 2, '1', '2024-01-11 03:47:45');
 
 -- --------------------------------------------------------
 
@@ -57,9 +58,11 @@ CREATE TABLE `customers` (
   `nombrep` varchar(50) NOT NULL,
   `apellidop` varchar(50) NOT NULL,
   `seguro` char(10) NOT NULL,
-  `tele` char(10) NOT NULL,
+  `tele` char(11) NOT NULL,
   `sexo` char(15) NOT NULL,
   `funcionario` char(2) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `serial` char(10) NOT NULL,
+  `cargos` char(20) NOT NULL,
   `usuario` varchar(15) NOT NULL,
   `clave` varchar(255) NOT NULL,
   `cargo` char(1) NOT NULL,
@@ -71,9 +74,10 @@ CREATE TABLE `customers` (
 -- Volcado de datos para la tabla `customers`
 --
 
-INSERT INTO `customers` (`codpaci`, `dnipa`, `nombrep`, `apellidop`, `seguro`, `tele`, `sexo`, `funcionario`, `usuario`, `clave`, `cargo`, `estado`, `fecha_create`) VALUES
-(1, '75745848', 'Manuel', 'Aparicio', 'Si', '999993939', 'Masculino', '', 'manu', 'b0baee9d279d34fa1dfd71aadb908c3f', '2', '1', '2022-05-02 02:56:18'),
-(2, '98584548', 'Leonardo', 'Pazos', 'Si', '959595959', 'Masculino', '', 'leonar1', 'b0baee9d279d34fa1dfd71aadb908c3f', '2', '1', '2022-05-02 06:30:20');
+INSERT INTO `customers` (`codpaci`, `dnipa`, `nombrep`, `apellidop`, `seguro`, `tele`, `sexo`, `funcionario`, `serial`, `cargos`, `usuario`, `clave`, `cargo`, `estado`, `fecha_create`) VALUES
+(1, '75745848', 'Manuel', 'Aparicio', 'Si', '999993939', 'Masculino', '', '', '', 'manu', 'b0baee9d279d34fa1dfd71aadb908c3f', '2', '1', '2022-05-02 02:56:18'),
+(2, '98584548', 'Leonardo', 'Pazos', 'Si', '959595959', 'Masculino', '', '', '', 'leonar1', 'b0baee9d279d34fa1dfd71aadb908c3f', '2', '1', '2022-05-02 06:30:20'),
+(6, '414216', 'Roger', 'Romero Escalona|', 'Si', '04145233650', 'Masculino', 'Si', '26768416', 'Aviacion', 'Rere', 'caf1a3dfb505ffed0d024130f58c5cfa', '2', '1', '2024-01-11 03:44:08');
 
 -- --------------------------------------------------------
 
@@ -102,7 +106,8 @@ CREATE TABLE `doctor` (
 
 INSERT INTO `doctor` (`coddoc`, `dnidoc`, `nomdoc`, `apedoc`, `codespe`, `sexo`, `telefo`, `fechanaci`, `correo`, `naciona`, `estado`, `fecha_create`) VALUES
 (2, '74747384', 'Manuel', 'Alban', 4, 'Masculino', '998766554', '1995-09-09', '', 'Peruana(o)', '1', '2022-05-02 03:08:38'),
-(3, '78493949', 'jose', 'martinez juarez', 3, 'Masculino', '988833333', '2022-03-30', '', 'Peruana(o)', '1', '2022-03-31 01:43:25');
+(3, '78493949', 'jose', 'martinez juarez', 3, 'Masculino', '988833333', '2022-03-30', '', 'Peruana(o)', '1', '2022-03-31 01:43:25'),
+(4, '26768416', 'Roger', 'Romero Escalona', 2, 'Masculino', '041452336', '2024-01-30', '', 'Venezolana(o)', '1', '2024-01-11 03:45:52');
 
 -- --------------------------------------------------------
 
@@ -230,19 +235,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `codcit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `codcit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `codpaci` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `codpaci` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `doctor`
 --
 ALTER TABLE `doctor`
-  MODIFY `coddoc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `coddoc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `horario`

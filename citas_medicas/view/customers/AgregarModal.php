@@ -52,12 +52,23 @@
 				
 			</select>
 							</div>
+						</div><div class="col-md-6">
+							<div class="form-group form-group-default">
+								<label>Cargo</label>
+								<input name="cargos" type="text" class="form-control" required placeholder="Ingrese Cargo">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group form-group-default">
+								<label>Carnet</label>
+								<input name="carnet" type="text" class="form-control" required maxlength="10" placeholder="Numero de Carnet" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+							</div>
 						</div>
 						
 						<div class="col-md-6">
 							<div class="form-group form-group-default">
 								<label>Teléfono</label>
-								<input name="tele" type="text" class="form-control" required maxlength="10" placeholder="Ingrese teléfono" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+								<input name="tele" type="text" class="form-control" required maxlength="11" placeholder="Ingrese teléfono" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
 							</div>
 						</div>
 						
@@ -71,6 +82,8 @@
 					</select>
 							</div>
 						</div>
+						
+						
 						
 						<div class="col-md-6">
 							<div class="form-group form-group-default">
