@@ -5,7 +5,7 @@
          <V-Button Texto="Contacto" />
       </div>
    </div>
-   a
+   
 </template>
 
 <script setup>
