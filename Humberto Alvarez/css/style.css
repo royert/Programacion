@@ -1,9 +1,21 @@
+/*Estilos del index.html*/
+
 .container-carousel{
     height: 100vh;
     width: 100vw;
+    
 }
 
-.carousel-inner{
+.container-carousel__carousel-inner{
     height: 100%;
-    width: 100%;
+    width: 100%;   
+}
+
+.container-carousel__carousel-inner__item-btn{
+    position: absolute;
+    top: 0;
+}
+.container-carousel__carousel-inner__item-link{
+    color: white;
+
 }

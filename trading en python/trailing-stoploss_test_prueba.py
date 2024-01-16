@@ -209,7 +209,7 @@ if __name__ == '__main__':
     TRAIL_AMOUNT = .000015  # Amount by how much SL updates
     DEFAULT_SL = .4  # If position has no SL, set a default SL
     
-    mt5.initialize(login=1051991621, server='FTMO-Demo',password='JBRawHggBI2*')
+    mt5.initialize(login=1052053155, server='FTMO-Demo',password='JBRawHggBI2*')
 
     while True:
          # calculating account exposure
