@@ -78,7 +78,7 @@ $stmt = $connect->prepare('SELECT id, nombre, usuario, email,clave, cargo FROM u
    <!--  <img class="wave"src="../assets/img/wave.png" alt="">  -->
     <div class="contenedor">
     <div class="img">
-    <img src="assets/img/bg.svg" alt="">
+    <img src="assets/img/prueba2.png" alt="" class="img-index">
     </div>
     <div class="contenido-login">
 
