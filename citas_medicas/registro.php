@@ -30,7 +30,7 @@
 
     <form id="formulario_registro">
 
-    <img src="assets/img/logo.png" alt="">
+    <img src="assets/img/prueba2.png" alt="">
     <h2>Registrate</h2>
     
     <div class="input-div nit">

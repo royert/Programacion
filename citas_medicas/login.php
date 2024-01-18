@@ -71,7 +71,7 @@ $stmt = $connect->prepare('SELECT id, nombre, usuario, email,clave, cargo FROM u
     <link rel="stylesheet" type="text/css "href="assets/css/style.css">
     <link rel="stylesheet" type="text/css "href="assets/css/css/all.min.css">
     <link rel="stylesheet" href="assets/css/sweetalert.css">
-	<link rel="icon" href="assets/img/logo.png" type="image/x-icon"/>
+	<link rel="icon" href="assets/img/prueba2.png" type="image/x-icon"/>
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 </head>
 <body>
@@ -84,7 +84,7 @@ $stmt = $connect->prepare('SELECT id, nombre, usuario, email,clave, cargo FROM u
 
     <form autocomplete="off" method="POST"  role="form">
 
-    <img src="assets/img/logo.png" alt="">
+    
     <h2>Login</h2>
     <?php
     if(isset($errMsg)){
