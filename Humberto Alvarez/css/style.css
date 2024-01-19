@@ -11,15 +11,6 @@
     width: 100%;   
 }
 
-.container-carousel__carousel-inner__item-btn, .container-carousel__carousel-inner__item-p{
+.asd{
     position: absolute;
-    top: 0;
-}
-.container-carousel__carousel-inner__item-link{
-    color: white;
-
-}
-.container-carousel__carousel-inner__item-p{
-    color: white;
-    
 }
