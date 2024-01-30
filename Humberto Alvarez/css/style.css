@@ -1,0 +1,35 @@
+/*navegacion*/
+
+.container-navigation {
+  position: relative;
+}
+.container-navigation_nav__ul__li {
+  display: inline-block;
+}
+.container-navigation_nav__ul {
+  right: 0;
+}
+.container-navigation_nav__ul__li-a {
+  text-decoration: none;
+}
+
+/*Carousel*/
+.carousel-item {
+  height: 100vh;
+  width: 100vw;
+}
+
+.carousel-item-link-img {
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-item-caption {
+  position: absolute;
+  bottom: 0; /* Ajusta esto según tu diseño, puede ser top: 0, left: 0, etc. */
+  width: 100%;
+  padding: 20px;
+}
+.carousel-item-caption-p {
+  color: #fff; /* Color del texto */
+  font-size: 2.5em;
+}
