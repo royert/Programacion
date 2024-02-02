@@ -428,11 +428,11 @@
 													<th>#</th>
 													<th>DNI</th>
 													<th>Paciente</th>
-													<th>Seguro</th>
+													<th>Afiliado</th>
 													<th>Teléfono</th>
 													<th>Funcionario</th>
 													<th>Carnet</th>
-													<th>Cargo</th>
+													<th>Grado/Jerarquia</th>
 													
 													<th>Estado</th>
 													<th>Fecha</th>
@@ -444,11 +444,11 @@
 													<th>#</th>
 													<th>DNI</th>
 													<th>Paciente</th>
-													<th>Seguro</th>
+													<th>Afiliado</th>
 													<th>Teléfono</th>
 													<th>Funcionario</th>
 													<th>Carnet</th>
-													<th>Cargo</th>
+													<th>Grado/Jerarquia</th>
 													
 													<th>Estado</th>
 													<th>Fecha</th>

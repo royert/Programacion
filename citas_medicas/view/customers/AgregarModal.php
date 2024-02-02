@@ -34,7 +34,7 @@
 						
 						<div class="col-md-6">
 							<div class="form-group form-group-default">
-								<label>Seguro</label>
+								<label>Afiliado</label>
 								<select class="form-control" name="seguro">
 				<option value="Si">Si</option>
 				<option value="No">No</option>
@@ -54,8 +54,8 @@
 							</div>
 						</div><div class="col-md-6">
 							<div class="form-group form-group-default">
-								<label>Cargo</label>
-								<input name="cargos" type="text" class="form-control" required placeholder="Ingrese Cargo">
+								<label>Grado/Jerarquia</label>
+								<input name="cargos" type="text" class="form-control" required placeholder="Ingrese Grado/Jerarquia">
 							</div>
 						</div>
 						<div class="col-md-6">

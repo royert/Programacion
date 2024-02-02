@@ -45,7 +45,7 @@
 						
 						<div class="col-md-6">
 							<div class="form-group form-group-default">
-								<label>Seguro</label>
+								<label>Afiliado</label>
 						
 						
 						<select class="form-control" name="seguro" value="<?php echo $row['seguro'];?>" >
@@ -74,7 +74,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="form-group form-group-default">
-								<label>Cargo</label>
+								<label>Grado/Jerarquia</label>
 						
 						<input type="text" class="form-control" name="carnet" value="<?php echo $row['cargos']; ?>">
 							</div>
