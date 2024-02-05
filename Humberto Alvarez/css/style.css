@@ -1,16 +1,14 @@
-/*navegacion*/
+/*Navbar*/
 
-.container-navigation {
-  position: relative;
+.container-fluid-img {
+  width: 1em;
+  margin-right: 0.5em;
 }
-.container-navigation_nav__ul__li {
-  display: inline-block;
-}
-.container-navigation_nav__ul {
-  right: 0;
-}
-.container-navigation_nav__ul__li-a {
-  text-decoration: none;
+
+.offcanvas-title-img {
+  width: 4em;
+  display: block;
+  margin:auto;
 }
 
 /*Carousel*/
@@ -21,7 +19,7 @@
 
 .carousel-item-link-img {
   height: 100%;
-  object-fit: cover;
+  /*   object-fit: cover; */
 }
 .carousel-item-caption {
   position: absolute;
