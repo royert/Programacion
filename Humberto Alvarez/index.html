@@ -1,126 +1,379 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humberto Alvarez</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/humberto alvarez.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Humberto Alvarez</title>
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/bootstrap.css" />
-  <link rel="shortcut icon" href="./assets/humberto alvarez.png" type="image/x-icon" />
-</head>
-
-<body>
-  <div class="container-navigation">
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/humberto alvarez.png" alt="Logo Diablos" class="container-fluid-img" />Humberto Alvarez</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <img src="./assets/humberto alvarez.png" alt="Logo Diablos" class="offcanvas-title-img" />
-            <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+  <body>
+    <div class="container-navigation">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/humberto alvarez.png"
+              alt="Logo Diablos"
+              class="container-fluid-img"
+            />Humberto Alvarez</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <img
+                src="./assets/humberto alvarez.png"
+                alt="Logo Diablos"
+                class="offcanvas-title-img"
+              />
+              <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
                 Humberto Alvarez
               </h5> -->
 
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./view/acerca_del_equipo.html"
+                    >Acerca del Equipo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Plantilla</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Patrocinante</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Calendarios
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./view/acerca_del_equipo.html">Acerca del Equipo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Plantilla</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Noticias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Patrocinante</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Calendarios
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-success" type="submit">Search</button>
-            </form>
+        </div>
+      </nav>
+    </div>
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 1.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet. foto 1
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
           </div>
         </div>
-      </div>
-    </nav>
-  </div>
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="carousel-item-link"><img
-            src="./assets/DSC00026.JPG" class="d-block w-100 carousel-item-link-img" alt="..." /></a>
-        <div class="carousel-item-caption">
-          <p class="carousel-item-caption-p">
-            Lorem ipsum dolor sit amet. foto 1
-          </p>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary carousel-item-caption-link">Ver
-            Mas</a>
+        <div class="carousel-item">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 2.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet foto 2
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="carousel-item-link"><img
-            src="./assets/DSC00027.JPG" class="d-block w-100 carousel-item-link-img" alt="..." /></a>
-        <div class="carousel-item-caption">
-          <p class="carousel-item-caption-p">
-            Lorem ipsum dolor sit amet foto 2
-          </p>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary carousel-item-caption-link">Ver
-            Mas</a>
+        <div class="carousel-item">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 3.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet. foto 3
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="carousel-item-link"><img
-            src="./assets/DSC00029.JPG" class="d-block w-100 carousel-item-link-img" alt="..." /></a>
-        <div class="carousel-item-caption">
-          <p class="carousel-item-caption-p">
-            Lorem ipsum dolor sit amet. foto 3
-          </p>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary carousel-item-caption-link">Ver
-            Mas</a>
+        <div class="carousel-item">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 4.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet. foto 4
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 5.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet. foto 5
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 6.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet. foto 6
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 7.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet. foto 7
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 8.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet. foto 8
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 9.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet. foto 9
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="carousel-item-link"
+            ><img
+              src="./assets/foto 10.JPG"
+              class="d-block w-100 carousel-item-link-img"
+              alt="..."
+          /></a>
+          <div class="carousel-item-caption">
+            <p class="carousel-item-caption-p">
+              Lorem ipsum dolor sit amet. foto 10
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-danger carousel-item-caption-link"
+              >Ver Mas</a
+            >
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/script.js"></script>
-</body>
-
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
